@@ -1,0 +1,12 @@
+name: walshflow
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - pyscf>=2.8
+  - pip
+  - pip:
+      - dftd3>=1.3

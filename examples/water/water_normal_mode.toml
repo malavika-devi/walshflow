@@ -1,0 +1,36 @@
+[system]
+name = "H2O normal-mode smoke test"
+charge = 0
+spin = 0
+
+[method]
+theory = "dft"
+xc = "pbe"
+basis = "sto-3g"
+density_fit = false
+grid_level = 2
+conv_tol = 1e-9
+max_cycle = 100
+memory_mb = 2000
+threads = 2
+pyscf_verbose = 3
+
+[scan]
+type = "normal_mode"
+reference = "water.xyz"
+mode_index = 0
+minimum = -0.10
+maximum = 0.10
+points = 5
+
+[tracking]
+orbitals_each_side = 1
+candidate_margin = 2
+max_energy_step_ev = 2.0
+reference_index = 2
+
+[output]
+directory = "run_water_mode"
+coordinate_label = "Normalized mode displacement (Angstrom)"
+title = "H2O normal-mode Walsh smoke test"
+energy_reference = "reference"

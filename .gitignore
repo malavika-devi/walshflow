@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+run/
+run_*/
+examples/*/run_*/
+*.chk
+*.h5
+*.npz
+*.log
+.DS_Store
+
+# Local credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Scheduler and quantum-chemistry outputs
+slurm-*.out
+walshflow-*.out
+*.fchk
+*.cube
+*.wfn
+*.wfx
+*.molden
+*.molden.input

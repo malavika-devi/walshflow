@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+pyscf>=2.8
+# Required only when method.dispersion = "d3bj" or "d3zero":
+dftd3>=1.3
